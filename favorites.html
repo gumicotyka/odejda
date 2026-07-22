@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Избранное — Все по карману</title>
+  <meta name="description" content="Избранные товары магазина «Все по карману» — сохраняйте понравившиеся вещи." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">Все по карману</a>
+    <div class="topbar-side">
+      <a class="topbar-phone" href="tel:+79630042822">+7 (963) 004-28-22</a>
+      <nav class="nav" aria-label="Основное меню">
+        <a href="index.html#catalog">Популярное</a>
+        <a href="favorites.html" class="nav-fav is-current" aria-current="page" aria-label="Избранное">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/>
+          </svg>
+          <span>Избранное</span>
+          <span class="fav-count" data-fav-count hidden>0</span>
+        </a>
+        <a href="contacts.html" class="nav-contact" aria-label="Контакты">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2.25c-3.6 0-6.75 1.8-6.75 4.05V20h13.5v-1.7c0-2.25-3.15-4.05-6.75-4.05Z"/>
+          </svg>
+          <span>Контакты</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-inner">
+    <section class="fav-hero">
+      <h1>
+        <span class="fav-title-icon" aria-hidden="true">♥</span>
+        Избранное
+      </h1>
+      <p class="lead">Понравившиеся вещи — чтобы не потерять и не искать заново. Добавляйте сердечком на витрине.</p>
+    </section>
+
+    <section class="fav-list" data-fav-list aria-live="polite"></section>
+    <p class="fav-empty" data-fav-empty hidden>
+      Пока пусто. Откройте
+      <a href="index.html#catalog">популярные товары</a>
+      и нажмите сердечко на понравившейся вещи.
+    </p>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p class="footer-brand">Все по карману</p>
+      <p>ШТД, 2 этаж · ул. Советская, 75 Б</p>
+      <p>© <span id="year"></span></p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">На главную</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="certificate.html">Сертификат</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Все по карману — семейный магазин низких цен</title>
+  <meta name="description" content="Семейный магазин «Все по карману»: одежда и обувь для всей семьи. ШТД, 2 этаж, ул. Советская, 75 Б." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">Все по карману</a>
+    <div class="topbar-side">
+      <a class="topbar-phone" href="tel:+79630042822">+7 (963) 004-28-22</a>
+      <nav class="nav" aria-label="Основное меню">
+        <a href="#about">О нас</a>
+        <a href="#school">К школе</a>
+        <a href="#catalog">Популярное</a>
+        <a href="certificate.html">Сертификат</a>
+        <a href="favorites.html" class="nav-fav" aria-label="Избранное">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/>
+          </svg>
+          <span>Избранное</span>
+          <span class="fav-count" data-fav-count hidden>0</span>
+        </a>
+        <a href="contacts.html" class="nav-contact" aria-label="Контакты">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2.25c-3.6 0-6.75 1.8-6.75 4.05V20h13.5v-1.7c0-2.25-3.15-4.05-6.75-4.05Z"/>
+          </svg>
+          <span>Контакты</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Главный экран">
+      <div class="hero-media" role="img" aria-label="Семья выбирает одежду в магазине «Все по карману»"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Магазин низких цен</p>
+        <p class="brand">Все по карману</p>
+        <h1>Семейный магазин одежды и обуви</h1>
+        <p class="lead">Приходите всей семьёй в ШТД на 2 этаж.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#catalog">Популярные товары</a>
+          <a class="btn btn-ghost" href="contacts.html">Связаться</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about" aria-label="О нас">
+      <div class="about-media" role="img" aria-label="Интерьер магазина и подарочная упаковка"></div>
+      <div class="about-copy">
+        <h2>О нас</h2>
+        <p class="about-intro">Магазин «Все по карману» позиционирует себя как пространство разумного потребления.</p>
+        <h3 class="about-sub">Наши приоритеты:</h3>
+        <ul class="priorities">
+          <li><strong>Добросовестность</strong> — цены, соответствующие реальной рыночной ситуации</li>
+          <li><strong>Экспертность</strong> — ассортимент, сформированный с учётом актуальных потребностей аудитории</li>
+          <li><strong>Уважение</strong> — к финансовым возможностям и времени каждого клиента</li>
+        </ul>
+        <p class="about-outro">Мы предлагаем не просто товары, а продуманную систему покупок, где ваши интересы находятся на первом месте.</p>
+      </div>
+    </section>
+
+    <div class="kids-stretch">
+      <div class="kids-stretch-media" role="img" aria-label="Детская одежда и аксессуары"></div>
+
+    <section id="kids" class="kids-banner" aria-label="Детская одежда">
+      <div class="kids-banner-copy">
+        <p class="kids-banner-eyebrow">К школе</p>
+        <h2>Готовимся к учебному году</h2>
+        <p class="kids-banner-lead">Новинки для девочек и мальчиков — удобно и по карману. Мягкие ткани, спокойные оттенки и вещи, в которых комфортно каждый день.</p>
+        <a class="btn kids-banner-btn" href="#school">Смотреть новинки</a>
+      </div>
+    </section>
+
+    <section id="school" class="school" aria-label="К школе">
+      <div class="school-grid">
+        <article class="school-block school-block--girls">
+          <h3>Новинки для девочек</h3>
+          <ul class="school-items">
+            <li class="product-card school-card" data-product-id="school-girl-dress" data-title="Платье школьное" data-meta="Девочки · рост 122–146" data-img="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=700&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=700&q=80" alt="Платье школьное" />
+              <div class="slide-info">
+                <h4>Платье школьное</h4>
+                <p>Девочки · рост 122–146</p>
+              </div>
+            </li>
+            <li class="product-card school-card" data-product-id="school-girl-blouse" data-title="Блузка белая" data-meta="Девочки · размер 30–36" data-img="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=700&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=700&q=80" alt="Блузка белая" />
+              <div class="slide-info">
+                <h4>Блузка белая</h4>
+                <p>Девочки · размер 30–36</p>
+              </div>
+            </li>
+            <li class="product-card school-card" data-product-id="school-girl-shoes" data-title="Туфли школьные" data-meta="Девочки · размер 32–37" data-img="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80" alt="Туфли школьные" />
+              <div class="slide-info">
+                <h4>Туфли школьные</h4>
+                <p>Девочки · размер 32–37</p>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="school-block school-block--boys">
+          <h3>Новинки для мальчиков</h3>
+          <ul class="school-items">
+            <li class="product-card school-card" data-product-id="school-boy-suit" data-title="Костюм школьный" data-meta="Мальчики · рост 128–152" data-img="https://images.unsplash.com/photo-1503919545889-aef636e10ad9?auto=format&fit=crop&w=700&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad9?auto=format&fit=crop&w=700&q=80" alt="Костюм школьный" />
+              <div class="slide-info">
+                <h4>Костюм школьный</h4>
+                <p>Мальчики · рост 128–152</p>
+              </div>
+            </li>
+            <li class="product-card school-card" data-product-id="school-boy-shirt" data-title="Рубашка белая" data-meta="Мальчики · размер 30–38" data-img="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=700&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=700&q=80" alt="Рубашка белая" />
+              <div class="slide-info">
+                <h4>Рубашка белая</h4>
+                <p>Мальчики · размер 30–38</p>
+              </div>
+            </li>
+            <li class="product-card school-card" data-product-id="school-boy-shoes" data-title="Туфли классические" data-meta="Мальчики · размер 33–39" data-img="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=700&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=700&q=80" alt="Туфли классические" />
+              <div class="slide-info">
+                <h4>Туфли классические</h4>
+                <p>Мальчики · размер 33–39</p>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog popular">
+      <h2>Популярные товары</h2>
+      <p class="section-lead">То, что чаще всего выбирают у нас в магазине</p>
+
+      <div class="filters" role="tablist" aria-label="Категории">
+        <button type="button" class="filter is-active" data-filter="all">Все</button>
+        <button type="button" class="filter" data-filter="men">Мужская</button>
+        <button type="button" class="filter" data-filter="women">Женская</button>
+        <button type="button" class="filter" data-filter="kids">Детская</button>
+        <button type="button" class="filter" data-filter="accessories">Аксессуары</button>
+      </div>
+
+      <div class="carousel popular-carousel" data-carousel>
+        <button class="carousel-btn prev" type="button" aria-label="Предыдущий товар">‹</button>
+        <div class="carousel-viewport">
+          <ul class="carousel-track">
+            <li class="slide product-card is-active" data-cat="men" data-product-id="shirt-men" data-title="Рубашка мужская" data-meta="Мужская · размер L" data-img="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <span class="product-badge">Хит</span>
+              <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=80" alt="Мужская рубашка" />
+              <div class="slide-info">
+                <h3>Рубашка мужская</h3>
+                <p>Мужская · размер L</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="dress-women" data-title="Платье женское" data-meta="Женская · размер S–M" data-img="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <span class="product-badge">Хит</span>
+              <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=80" alt="Женское платье" />
+              <div class="slide-info">
+                <h3>Платье женское</h3>
+                <p>Женская · размер S–M</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="kids" data-product-id="set-kids" data-title="Комплект детский" data-meta="Детская · на рост 110–128" data-img="https://images.unsplash.com/photo-1503919545889-aef636e10ad9?auto=format&fit=crop&w=900&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad9?auto=format&fit=crop&w=900&q=80" alt="Детская одежда" />
+              <div class="slide-info">
+                <h3>Комплект детский</h3>
+                <p>Детская · на рост 110–128</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="sneakers" data-title="Кроссовки" data-meta="Обувь · размеры 40–44" data-img="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <span class="product-badge">Хит</span>
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Кроссовки" />
+              <div class="slide-info">
+                <h3>Кроссовки</h3>
+                <p>Обувь · размеры 40–44</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="heels" data-title="Туфли женские" data-meta="Женская · размеры 36–39" data-img="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80" alt="Женская обувь" />
+              <div class="slide-info">
+                <h3>Туфли женские</h3>
+                <p>Женская · размеры 36–39</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="kids" data-product-id="kids-shoes" data-title="Кеды детские" data-meta="Детская · размеры 28–35" data-img="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=900&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <span class="product-badge">Хит</span>
+              <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=900&q=80" alt="Детская обувь" />
+              <div class="slide-info">
+                <h3>Кеды детские</h3>
+                <p>Детская · размеры 28–35</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="accessories" data-product-id="bag-cross" data-title="Сумка через плечо" data-meta="Аксессуары · универсальная" data-img="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <span class="product-badge">Хит</span>
+              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80" alt="Сумка через плечо" />
+              <div class="slide-info">
+                <h3>Сумка через плечо</h3>
+                <p>Аксессуары · универсальная</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="accessories" data-product-id="belt-classic" data-title="Ремень классический" data-meta="Аксессуары · кожа" data-img="https://images.unsplash.com/photo-1624222247344-550fb60583fd?auto=format&fit=crop&w=900&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <img src="https://images.unsplash.com/photo-1624222247344-550fb60583fd?auto=format&fit=crop&w=900&q=80" alt="Ремень классический" />
+              <div class="slide-info">
+                <h3>Ремень классический</h3>
+                <p>Аксессуары · кожа</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="accessories" data-product-id="scarf-soft" data-title="Шарф мягкий" data-meta="Аксессуары · на каждый день" data-img="https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=900&q=80">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <img src="https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=900&q=80" alt="Шарф мягкий" />
+              <div class="slide-info">
+                <h3>Шарф мягкий</h3>
+                <p>Аксессуары · на каждый день</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button class="carousel-btn next" type="button" aria-label="Следующий товар">›</button>
+        <div class="carousel-dots" role="tablist" aria-label="Слайды"></div>
+      </div>
+    </section>
+
+    <section class="promo" aria-label="Социальные сети">
+      <div class="promo-copy">
+        <p class="promo-text">Мы в социальных сетях</p>
+        <p class="promo-lead">Узнавайте о новинках и акциях</p>
+      </div>
+      <div class="promo-actions">
+        <a class="social vk" href="https://vk.ru/club238518920" target="_blank" rel="noopener" aria-label="Группа ВКонтакте">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12.8 17.4h-1.4c-3.5 0-5.7-2.4-5.8-6.5h1.5c.1 2.9 1.3 4.1 2.3 4.3v-4.3h1.4v2.5c1-.1 2-1.3 2.4-2.5h1.4c-.3 1.5-1.5 2.7-2.3 3.2.9.4 2.2 1.5 2.7 3.3h-1.6c-.4-1.3-1.4-2.3-2.6-2.5v2.5Z"/></svg>
+          ВКонтакте
+        </a>
+      </div>
+    </section>
+
+    <section id="recommend" class="recommend">
+      <h2>Рекомендуем посетить:</h2>
+      <ul class="recommend-grid">
+        <li>
+          <figure class="store-photo">
+            <img src="assets/recommend-1.svg" alt="Магазин 1" />
+          </figure>
+        </li>
+        <li>
+          <figure class="store-photo">
+            <img src="assets/recommend-2.svg" alt="Магазин 2" />
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section id="howto" class="howto">
+      <h2>Как нас найти</h2>
+      <p class="section-lead">Ждём вас в торговом доме — удобно зайти всей семьёй.</p>
+      <div class="howto-info">
+        <p><strong>ШТД</strong> · <span class="badge">2 этаж</span></p>
+        <p>г. Шадринск, ул. Советская, 75 Б</p>
+        <p>Ежедневно 10:00–20:00</p>
+        <p class="hint">Ориентир — вход в ШТД, подъём на 2 этаж, вывеска «Все по карману».</p>
+      </div>
+
+      <div class="map-block">
+        <div class="map-frame">
+          <iframe
+            title="Карта: магазин «Все по карману», г. Шадринск, ул. Советская, 75 Б"
+            src="https://yandex.ru/map-widget/v1/?ll=63.621231%2C56.083159&z=16&l=map&pt=63.621231%2C56.083159%2Cpm2rdm"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <a class="map-link" href="https://yandex.ru/maps/?pt=63.621231%2C56.083159&z=16&l=map&rtext=~56.083159%2C63.621231&rtt=auto" target="_blank" rel="noopener">Построить маршрут в Яндекс Картах</a>
+      </div>
+    </section>
+
+  <footer class="footer">
+    <div>
+      <p class="footer-brand">Все по карману</p>
+      <p>ШТД, 2 этаж · ул. Советская, 75 Б</p>
+      <p>© <span id="year"></span></p>
+    </div>
+    <div class="footer-links">
+      <a href="contacts.html">Контакты</a>
+      <a href="favorites.html">Избранное</a>
+      <a href="certificate.html">Сертификат</a>
+      <a href="https://vk.ru/club238518920" target="_blank" rel="noopener" aria-label="ВКонтакте">ВКонтакте</a>
+      <a href="tel:+79630042822">+7 (963) 004-28-22</a>
+    </div>
+  </footer>
+    </div>
+  </main>
+
+  <a class="fab-contact" href="contacts.html" aria-label="Перейти к контактам">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+      <path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1Z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
