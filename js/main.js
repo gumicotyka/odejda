@@ -116,16 +116,6 @@
     });
   }
 
-  /* —— Сертификат —— */
-  const certForm = document.querySelector("[data-cert-form]");
-  if (certForm) {
-    certForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const note = document.querySelector("[data-cert-note]");
-      if (note) note.hidden = false;
-    });
-  }
-
   /* —— Карусель —— */
   document.querySelectorAll("[data-carousel]").forEach(initCarousel);
 

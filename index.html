@@ -19,7 +19,6 @@
         <a href="#about">О нас</a>
         <a href="#school">К школе</a>
         <a href="#catalog">Популярное</a>
-        <a href="certificate.html">Сертификат</a>
         <a href="favorites.html" class="nav-fav" aria-label="Избранное">
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
             <path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/>
@@ -40,11 +39,16 @@
   <main>
     <section class="hero" aria-label="Главный экран">
       <div class="hero-media" role="img" aria-label="Семья выбирает одежду в магазине «Все по карману»"></div>
+      <aside class="hero-promo" aria-label="Акция в магазине">
+        <p class="hero-promo-badge">Сейчас в магазине</p>
+        <p class="hero-promo-percent" aria-hidden="true">−50%</p>
+        <p class="hero-promo-title">Акция на всю одежду</p>
+      </aside>
       <div class="hero-copy">
         <p class="eyebrow">Магазин низких цен</p>
         <p class="brand">Все по карману</p>
         <h1>Семейный магазин одежды и обуви</h1>
-        <p class="lead">Приходите всей семьёй в ШТД на 2 этаж.</p>
+        <p class="lead">Сейчас скидка 50% на всю одежду. Приходите всей семьёй в ШТД на 2 этаж.</p>
         <div class="hero-actions">
           <a class="btn" href="#catalog">Популярные товары</a>
           <a class="btn btn-ghost" href="contacts.html">Связаться</a>
@@ -152,6 +156,32 @@
             </li>
           </ul>
         </article>
+
+        <article class="school-block school-block--backpacks">
+          <h3>Рюкзаки</h3>
+          <ul class="school-items">
+            <li class="product-card school-card" data-product-id="school-backpack-kids" data-title="Рюкзак" data-meta="Детский · разные расцветки" data-img="assets/products/backpack-kids.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <img src="assets/products/backpack-kids.png" alt="Детский рюкзак" />
+              <div class="slide-info">
+                <h4>Рюкзак</h4>
+                <p>Детский · разные расцветки</p>
+              </div>
+            </li>
+            <li class="product-card school-card" data-product-id="school-backpack-sport" data-title="Рюкзак" data-meta="Школьный · спортивные расцветки" data-img="assets/products/backpack-sport.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <img src="assets/products/backpack-sport.png" alt="Школьный спортивный рюкзак" />
+              <div class="slide-info">
+                <h4>Рюкзак</h4>
+                <p>Школьный · спортивные расцветки</p>
+              </div>
+            </li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -171,26 +201,342 @@
         <button class="carousel-btn prev" type="button" aria-label="Предыдущий товар">‹</button>
         <div class="carousel-viewport">
           <ul class="carousel-track">
-            <li class="slide product-card is-active" data-cat="men" data-product-id="shirt-men" data-title="Рубашка мужская" data-meta="Мужская · размер L" data-img="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=80">
+            <li class="slide product-card is-active" data-cat="men" data-product-id="tshirt-white" data-title="Футболка" data-meta="Белая базовая футболка из плотного хлопка · Размер 46–54" data-img="assets/products/tshirt-white.png">
               <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
                 <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
               </button>
-              <span class="product-badge">Хит</span>
-              <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=80" alt="Мужская рубашка" />
+              <div class="product-photo">
+                <img src="assets/products/tshirt-white.png" alt="Белая базовая футболка из плотного хлопка" />
+              </div>
               <div class="slide-info">
-                <h3>Рубашка мужская</h3>
-                <p>Мужская · размер L</p>
+                <h3>Футболка</h3>
+                <p>Белая базовая футболка из плотного хлопка · Размер 46–54</p>
+                <span class="price">790 ₽</span>
               </div>
             </li>
-            <li class="slide product-card" data-cat="women" data-product-id="dress-women" data-title="Платье женское" data-meta="Женская · размер S–M" data-img="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=80">
+            <li class="slide product-card" data-cat="men" data-product-id="tshirt-green" data-title="Футболка" data-meta="Темно-зеленая футболка · Размер 46–54" data-img="assets/products/tshirt-green.png">
               <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
                 <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
               </button>
-              <span class="product-badge">Хит</span>
-              <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=80" alt="Женское платье" />
+              <div class="product-photo">
+                <img src="assets/products/tshirt-green.png" alt="Темно-зеленая футболка" />
+              </div>
+              <div class="slide-info">
+                <h3>Футболка</h3>
+                <p>Темно-зеленая футболка · Размер 46–54</p>
+                <span class="price">790 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="tshirt-grey" data-title="Футболка" data-meta="Тёмно-серая футболка · Размер 46–54" data-img="assets/products/tshirt-grey.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/tshirt-grey.png" alt="Тёмно-серая футболка" />
+              </div>
+              <div class="slide-info">
+                <h3>Футболка</h3>
+                <p>Тёмно-серая футболка · Размер 46–54</p>
+                <span class="price">790 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="tshirt-graphite" data-title="Футболка" data-meta="Графитовая футболка · Размер 46–54" data-img="assets/products/tshirt-graphite.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/tshirt-graphite.png" alt="Графитовая футболка" />
+              </div>
+              <div class="slide-info">
+                <h3>Футболка</h3>
+                <p>Графитовая футболка · Размер 46–54</p>
+                <span class="price">790 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="suit-grey" data-title="Костюм" data-meta="Серый костюм · размер M–XL" data-img="assets/products/suit-grey.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/suit-grey.png" alt="Серый костюм" />
+              </div>
+              <div class="slide-info">
+                <h3>Костюм</h3>
+                <p>Серый костюм · размер M–XL</p>
+                <span class="price">1 790 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="suit-grey-2" data-title="Костюм" data-meta="Серый костюм · размер M–XL" data-img="assets/products/suit-grey-2.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/suit-grey-2.png" alt="Серый костюм" />
+              </div>
+              <div class="slide-info">
+                <h3>Костюм</h3>
+                <p>Серый костюм · размер M–XL</p>
+                <span class="price">1 790 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="suit-navy" data-title="Костюм" data-meta="Темно-синий костюм · размер M–XL" data-img="assets/products/suit-navy.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/suit-navy.png" alt="Темно-синий костюм" />
+              </div>
+              <div class="slide-info">
+                <h3>Костюм</h3>
+                <p>Темно-синий костюм · размер M–XL</p>
+                <span class="price">1 790 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="suit-summer-black" data-title="Летний костюм" data-meta="Чёрный летний костюм (футболка и шорты) · размер M–XL" data-img="assets/products/suit-summer-black.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/suit-summer-black.png" alt="Чёрный летний костюм" />
+              </div>
+              <div class="slide-info">
+                <h3>Летний костюм</h3>
+                <p>Чёрный летний костюм (футболка и шорты) · размер M–XL</p>
+                <span class="price">1 890 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="suit-summer-navy" data-title="Летний костюм" data-meta="Темно-синий летний костюм (футболка и шорты) · размер M–XL" data-img="assets/products/suit-summer-navy.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/suit-summer-navy.png" alt="Темно-синий летний костюм" />
+              </div>
+              <div class="slide-info">
+                <h3>Летний костюм</h3>
+                <p>Темно-синий летний костюм (футболка и шорты) · размер M–XL</p>
+                <span class="price">1 890 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="suit-sport-white-black" data-title="Спортивный костюм" data-meta="Бело-чёрный спортивный костюм · размер M–XL" data-img="assets/products/suit-sport-white-black.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/suit-sport-white-black.png" alt="Бело-чёрный спортивный костюм" />
+              </div>
+              <div class="slide-info">
+                <h3>Спортивный костюм</h3>
+                <p>Бело-чёрный спортивный костюм · размер M–XL</p>
+                <span class="price">1 500 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="suit-sport-grey-black" data-title="Спортивный костюм" data-meta="Серо-чёрный спортивный костюм · размер M–XL" data-img="assets/products/suit-sport-grey-black.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/suit-sport-grey-black.png" alt="Серо-чёрный спортивный костюм" />
+              </div>
+              <div class="slide-info">
+                <h3>Спортивный костюм</h3>
+                <p>Серо-чёрный спортивный костюм · размер M–XL</p>
+                <span class="price">1 500 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="suit-sport-dark-grey" data-title="Спортивный костюм" data-meta="Тёмно-серый спортивный костюм · размер M–XL" data-img="assets/products/suit-sport-dark-grey.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/suit-sport-dark-grey.png" alt="Тёмно-серый спортивный костюм" />
+              </div>
+              <div class="slide-info">
+                <h3>Спортивный костюм</h3>
+                <p>Тёмно-серый спортивный костюм · размер M–XL</p>
+                <span class="price">1 500 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="dress-women-polka" data-title="Платье женское" data-meta="Тёмно-синее в горошек · размер 50–60" data-img="assets/products/dress-women-polka.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/dress-women-polka.png" alt="Тёмно-синее платье в горошек" />
+              </div>
               <div class="slide-info">
                 <h3>Платье женское</h3>
-                <p>Женская · размер S–M</p>
+                <p>Тёмно-синее в горошек · размер 50–60</p>
+                <span class="price">1 190 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="dress-women-teal" data-title="Платье женское" data-meta="Бирюзовое · размер 50–60" data-img="assets/products/dress-women-teal.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/dress-women-teal.png" alt="Бирюзовое платье" />
+              </div>
+              <div class="slide-info">
+                <h3>Платье женское</h3>
+                <p>Бирюзовое · размер 50–60</p>
+                <span class="price">1 190 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="tshirt-women-black-red" data-title="Футболка" data-meta="Чёрная с красным сердцем · размер 50–60" data-img="assets/products/tshirt-women-black-red-heart.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/tshirt-women-black-red-heart.png" alt="Чёрная футболка с красным сердцем" />
+              </div>
+              <div class="slide-info">
+                <h3>Футболка</h3>
+                <p>Чёрная с красным сердцем · размер 50–60</p>
+                <span class="price">590 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="tshirt-women-black-white" data-title="Футболка" data-meta="Чёрная с белым сердцем · размер 50–60" data-img="assets/products/tshirt-women-black-white-heart.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/tshirt-women-black-white-heart.png" alt="Чёрная футболка с белым сердцем" />
+              </div>
+              <div class="slide-info">
+                <h3>Футболка</h3>
+                <p>Чёрная с белым сердцем · размер 50–60</p>
+                <span class="price">590 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="tshirt-women-burgundy" data-title="Футболка" data-meta="Бордовая с белым сердцем · размер 50–60" data-img="assets/products/tshirt-women-burgundy-heart.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/tshirt-women-burgundy-heart.png" alt="Бордовая футболка с белым сердцем" />
+              </div>
+              <div class="slide-info">
+                <h3>Футболка</h3>
+                <p>Бордовая с белым сердцем · размер 50–60</p>
+                <span class="price">590 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="pants-women-beige" data-title="Штаны" data-meta="Бежевые широкие · размер 52–60" data-img="assets/products/pants-women-beige.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/pants-women-beige.png" alt="Бежевые широкие штаны" />
+              </div>
+              <div class="slide-info">
+                <h3>Штаны</h3>
+                <p>Бежевые широкие · размер 52–60</p>
+                <span class="price">890 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="pants-women-pink" data-title="Штаны" data-meta="Пыльно-розовые широкие · размер 52–60" data-img="assets/products/pants-women-pink.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/pants-women-pink.png" alt="Пыльно-розовые широкие штаны" />
+              </div>
+              <div class="slide-info">
+                <h3>Штаны</h3>
+                <p>Пыльно-розовые широкие · размер 52–60</p>
+                <span class="price">890 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="pants-women-brown" data-title="Штаны" data-meta="Шоколадно-коричневые широкие · размер 52–60" data-img="assets/products/pants-women-brown.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/pants-women-brown.png" alt="Шоколадно-коричневые широкие штаны" />
+              </div>
+              <div class="slide-info">
+                <h3>Штаны</h3>
+                <p>Шоколадно-коричневые широкие · размер 52–60</p>
+                <span class="price">890 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="pants-women-grey" data-title="Штаны" data-meta="Тёмно-серые широкие · размер 42–52" data-img="assets/products/pants-women-grey.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/pants-women-grey.png" alt="Тёмно-серые широкие штаны" />
+              </div>
+              <div class="slide-info">
+                <h3>Штаны</h3>
+                <p>Тёмно-серые широкие · размер 42–52</p>
+                <span class="price">700 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="pants-women-blue" data-title="Штаны" data-meta="Синие широкие · размер 42–52" data-img="assets/products/pants-women-blue.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/pants-women-blue.png" alt="Синие широкие штаны" />
+              </div>
+              <div class="slide-info">
+                <h3>Штаны</h3>
+                <p>Синие широкие · размер 42–52</p>
+                <span class="price">700 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="pants-women-pink-bright" data-title="Штаны" data-meta="Ярко-розовые широкие · размер 42–52" data-img="assets/products/pants-women-pink-bright.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/pants-women-pink-bright.png" alt="Ярко-розовые широкие штаны" />
+              </div>
+              <div class="slide-info">
+                <h3>Штаны</h3>
+                <p>Ярко-розовые широкие · размер 42–52</p>
+                <span class="price">700 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="vest-women-beige" data-title="Жилетка" data-meta="Бежевая" data-img="assets/products/vest-women-beige.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/vest-women-beige.png" alt="Бежевая жилетка" />
+              </div>
+              <div class="slide-info">
+                <h3>Жилетка</h3>
+                <p>Бежевая</p>
+                <span class="price">890 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="vest-women-yellow" data-title="Жилетка" data-meta="Жёлтая" data-img="assets/products/vest-women-yellow.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/vest-women-yellow.png" alt="Жёлтая жилетка" />
+              </div>
+              <div class="slide-info">
+                <h3>Жилетка</h3>
+                <p>Жёлтая</p>
+                <span class="price">890 ₽</span>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="women" data-product-id="vest-women-grey" data-title="Жилетка" data-meta="Тёмно-серая" data-img="assets/products/vest-women-grey.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/vest-women-grey.png" alt="Тёмно-серая жилетка" />
+              </div>
+              <div class="slide-info">
+                <h3>Жилетка</h3>
+                <p>Тёмно-серая</p>
+                <span class="price">890 ₽</span>
               </div>
             </li>
             <li class="slide product-card" data-cat="kids" data-product-id="set-kids" data-title="Комплект детский" data-meta="Детская · на рост 110–128" data-img="https://images.unsplash.com/photo-1503919545889-aef636e10ad9?auto=format&fit=crop&w=900&q=80">
@@ -203,15 +549,136 @@
                 <p>Детская · на рост 110–128</p>
               </div>
             </li>
-            <li class="slide product-card" data-cat="men" data-product-id="sneakers" data-title="Кроссовки" data-meta="Обувь · размеры 40–44" data-img="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80">
+            <li class="slide product-card" data-cat="men" data-product-id="sneaker-mint-green" data-title="Кроссовки" data-meta="Бело-мятные с зелёным · размер 40–44" data-img="assets/products/sneaker-mint-green.png">
               <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
                 <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
               </button>
-              <span class="product-badge">Хит</span>
-              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Кроссовки" />
+              <div class="product-photo">
+                <img src="assets/products/sneaker-mint-green.png" alt="Бело-мятные кроссовки с зелёным" />
+              </div>
               <div class="slide-info">
                 <h3>Кроссовки</h3>
-                <p>Обувь · размеры 40–44</p>
+                <p>Бело-мятные с зелёным · размер 40–44</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="sneaker-on-colors" data-title="Кроссовки" data-meta="Чёрные / серо-оранжевые · размер 40–44" data-img="assets/products/sneaker-on-colors.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/sneaker-on-colors.png" alt="Чёрные и серо-оранжевые кроссовки" />
+              </div>
+              <div class="slide-info">
+                <h3>Кроссовки</h3>
+                <p>Чёрные / серо-оранжевые · размер 40–44</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="sneaker-black-white" data-title="Кроссовки" data-meta="Чёрно-белые · размер 40–44" data-img="assets/products/sneaker-black-white.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/sneaker-black-white.png" alt="Чёрно-белые кроссовки" />
+              </div>
+              <div class="slide-info">
+                <h3>Кроссовки</h3>
+                <p>Чёрно-белые · размер 40–44</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="sneaker-black-red" data-title="Кроссовки" data-meta="Чёрные с красными акцентами · размер 40–44" data-img="assets/products/sneaker-black-red.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/sneaker-black-red.png" alt="Чёрные кроссовки с красными акцентами" />
+              </div>
+              <div class="slide-info">
+                <h3>Кроссовки</h3>
+                <p>Чёрные с красными акцентами · размер 40–44</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="sneaker-yellow-green" data-title="Кроссовки" data-meta="Жёлто-зелёные · размер 40–44" data-img="assets/products/sneaker-yellow-green.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/sneaker-yellow-green.png" alt="Жёлто-зелёные кроссовки" />
+              </div>
+              <div class="slide-info">
+                <h3>Кроссовки</h3>
+                <p>Жёлто-зелёные · размер 40–44</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="sneaker-neon-green" data-title="Кроссовки" data-meta="Чёрно-белые с неоново-зелёным · размер 40–44" data-img="assets/products/sneaker-neon-green.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/sneaker-neon-green.png" alt="Чёрно-белые кроссовки с неоново-зелёным" />
+              </div>
+              <div class="slide-info">
+                <h3>Кроссовки</h3>
+                <p>Чёрно-белые с неоново-зелёным · размер 40–44</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="sneaker-white-tan-green" data-title="Кроссовки" data-meta="Бело-бежевые с зелёным · размер 40–44" data-img="assets/products/sneaker-white-tan-green.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/sneaker-white-tan-green.png" alt="Бело-бежевые кроссовки с зелёным" />
+              </div>
+              <div class="slide-info">
+                <h3>Кроссовки</h3>
+                <p>Бело-бежевые с зелёным · размер 40–44</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="sneaker-brown" data-title="Кроссовки" data-meta="Коричневые · размер 40–44" data-img="assets/products/sneaker-brown.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/sneaker-brown.png" alt="Коричневые кроссовки" />
+              </div>
+              <div class="slide-info">
+                <h3>Кроссовки</h3>
+                <p>Коричневые · размер 40–44</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="sneaker-earth-tone" data-title="Кроссовки" data-meta="Земляные (кремово-коричнево-зелёные) · размер 40–44" data-img="assets/products/sneaker-earth-tone.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/sneaker-earth-tone.png" alt="Земляные кроссовки" />
+              </div>
+              <div class="slide-info">
+                <h3>Кроссовки</h3>
+                <p>Земляные (кремово-коричнево-зелёные) · размер 40–44</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="sneaker-beige-brown" data-title="Кроссовки" data-meta="Бежево-коричневые с красным · размер 40–44" data-img="assets/products/sneaker-beige-brown.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/sneaker-beige-brown.png" alt="Бежево-коричневые кроссовки с красным" />
+              </div>
+              <div class="slide-info">
+                <h3>Кроссовки</h3>
+                <p>Бежево-коричневые с красным · размер 40–44</p>
+              </div>
+            </li>
+            <li class="slide product-card" data-cat="men" data-product-id="sneaker-brown-white" data-title="Кроссовки" data-meta="Коричневые с белыми полосками · размер 40–44" data-img="assets/products/sneaker-brown-white.png">
+              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
+              </button>
+              <div class="product-photo">
+                <img src="assets/products/sneaker-brown-white.png" alt="Коричневые кроссовки с белыми полосками" />
+              </div>
+              <div class="slide-info">
+                <h3>Кроссовки</h3>
+                <p>Коричневые с белыми полосками · размер 40–44</p>
               </div>
             </li>
             <li class="slide product-card" data-cat="women" data-product-id="heels" data-title="Туфли женские" data-meta="Женская · размеры 36–39" data-img="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80">
@@ -228,22 +695,10 @@
               <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
                 <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
               </button>
-              <span class="product-badge">Хит</span>
               <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=900&q=80" alt="Детская обувь" />
               <div class="slide-info">
                 <h3>Кеды детские</h3>
                 <p>Детская · размеры 28–35</p>
-              </div>
-            </li>
-            <li class="slide product-card" data-cat="accessories" data-product-id="bag-cross" data-title="Сумка через плечо" data-meta="Аксессуары · универсальная" data-img="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80">
-              <button type="button" class="fav-btn" data-fav-toggle aria-label="В избранное" title="В избранное">
-                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5A4.5 4.5 0 0 1 6.5 4 5.2 5.2 0 0 1 12 6.09 5.2 5.2 0 0 1 17.5 4 4.5 4.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54Z"/></svg>
-              </button>
-              <span class="product-badge">Хит</span>
-              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80" alt="Сумка через плечо" />
-              <div class="slide-info">
-                <h3>Сумка через плечо</h3>
-                <p>Аксессуары · универсальная</p>
               </div>
             </li>
             <li class="slide product-card" data-cat="accessories" data-product-id="belt-classic" data-title="Ремень классический" data-meta="Аксессуары · кожа" data-img="https://images.unsplash.com/photo-1624222247344-550fb60583fd?auto=format&fit=crop&w=900&q=80">
@@ -286,22 +741,6 @@
       </div>
     </section>
 
-    <section id="recommend" class="recommend">
-      <h2>Рекомендуем посетить:</h2>
-      <ul class="recommend-grid">
-        <li>
-          <figure class="store-photo">
-            <img src="assets/recommend-1.svg" alt="Магазин 1" />
-          </figure>
-        </li>
-        <li>
-          <figure class="store-photo">
-            <img src="assets/recommend-2.svg" alt="Магазин 2" />
-          </figure>
-        </li>
-      </ul>
-    </section>
-
     <section id="howto" class="howto">
       <h2>Как нас найти</h2>
       <p class="section-lead">Ждём вас в торговом доме — удобно зайти всей семьёй.</p>
@@ -335,7 +774,6 @@
     <div class="footer-links">
       <a href="contacts.html">Контакты</a>
       <a href="favorites.html">Избранное</a>
-      <a href="certificate.html">Сертификат</a>
       <a href="https://vk.ru/club238518920" target="_blank" rel="noopener" aria-label="ВКонтакте">ВКонтакте</a>
       <a href="tel:+79630042822">+7 (963) 004-28-22</a>
     </div>
